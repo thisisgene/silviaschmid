@@ -159,14 +159,14 @@ a {
 }
 .hd-down #title-container {
   margin: 0;
-  /*text-align: center;*/
+  text-align: center;
   transition: all .1s ease-in-out;
   -moz-transition: all .1s ease-in-out;
   -webkit-transition: all .1s ease-in-out;
 }
 .hd-down #header-title {
   font-size: 100%;
-  text-align: center;
+
   /*padding: 0 0 0 .8em;*/
   transition: font-size .1s ease-in-out;
   -moz-transition: font-size .1s ease-in-out;
@@ -175,7 +175,7 @@ a {
 .hd-down #sub-title {
   font-size: 0;
   opacity: 0;
-  transition: all .1s ease-in-out;*/
+  transition: all .1s ease-in-out;
   -moz-transition: all .1s ease-in-out;
   -webkit-transition: all .1s ease-in-out;
 }
