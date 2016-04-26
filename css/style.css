@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'Amatic';
+  src: url('../fonts/amatic/Amatic-Bold.ttf');
+}
+
+body {
+  background-image: url('../img/background1.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  margin: 0;
+  padding: 0 6em;
+  font: 16px "Amatic";
+  letter-spacing: .1em;
+}
+#load-screen {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#main-content {
+  /*width: 90%;*/
+}
+                              /*  HEADER SECTION */
+#header-container, .hd-up {
+  background-color: rgba(255,255,255,0.92);
+  padding: .4em;
+  /*width: 90%;*/
+  top: 1.5em;
+  left: 6em;
+  right: 6em !important;
+  height: 6em;
+  position: fixed;
+  transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+}
+#logo {
+  float: left;
+  margin: .4em 2em .4em 1.5em;
+}
+#logo img {
+  width: 6.5em;
+  transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+}
+#title-container {
+  margin: 1em 0 1em 11.9em;
+  transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+}
+#title-container * {
+  margin: 0;
+}
+#header-title {
+  color: rgb(45, 188, 190);
+  transition: all .1s ease-in-out .1s;
+  -moz-transition: all .1s ease-in-out .1s;
+  -webkit-transition: all .1s ease-in-out .1s;
+}
+#sub-title {
+  margin-top: .3em;
+  font-size: 1.1em;
+  font-family: Helvetica;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: .05em;
+  transition: all .1s ease-in-out .1s;
+  -moz-transition: all .1s ease-in-out .1s;
+  -webkit-transition: all .1s ease-in-out .1s;
+}
+
+                            /* SIDE MENU SECTION */
+#side-menu, .sm-up {
+  position: fixed;
+  background-color: rgba(255,255,255,0.92);
+  top: 9.6em;
+  width: 8em;
+  margin: 0;
+  padding: .7em 1.2em;
+  transition: top .1s ease-in-out;
+  -moz-transition: top .1s ease-in-out;
+  -webkit-transition: top .1s ease-in-out;
+}
+#menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.6em;
+}
+#menu-list .menu-item {
+  margin: .4em 0;
+  border: 2px dashed rgba(45, 188, 190, 0);
+  padding: .3em;
+  padding-top: .1em;
+  cursor: pointer;
+}
+#menu-list .menu-item:hover {
+  border: 2px dashed rgba(45, 188, 190, 0.3);
+}
+.menu-link {
+
+}
+                            /* MAIN CONTENT SECTION */
+#content-container {
+  width: auto;
+  /*position: absolute;*/
+  /*top: 0;*/
+  clear: both;
+  /*background-color: rgba(255,255,255,0.92);*/
+  margin-top: 9.6em;
+  margin-left: 11.9em;
+}
+#content {
+  background-color: rgba(255,255,255,0.92);
+  /*margin-top: 9.7em;*/
+  /*margin-left: 11.9em;*/
+  height: 1000px;
+}
+
+                            /* HEADER TRANSFORM */
+#header-container.hd-down {
+  position: fixed;
+  /*width: 100%;*/
+  top: 0;
+  width: 9.2em;
+  height: 7.5em;
+  /*padding: 1.2em;*/
+  /*background-color: rgba(255,255,255,1);*/
+  /*box-shadow: 0 .1em 1em #aaa;*/
+  transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+}
+.hd-down #logo {
+  clear: left;
+}
+.hd-down #logo img{
+  /*width: 4em;*/
+  transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+}
+.hd-down #title-container {
+  margin: 0;
+  /*text-align: center;*/
+  transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+}
+.hd-down #header-title {
+  font-size: 100%;
+  text-align: center;
+  /*padding: 0 0 0 .8em;*/
+  transition: font-size .1s ease-in-out;
+  -moz-transition: font-size .1s ease-in-out;
+  -webkit-transition: font-size .1s ease-in-out;
+}
+.hd-down #sub-title {
+  font-size: 0;
+  opacity: 0;
+  transition: all .1s ease-in-out;*/
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+}
