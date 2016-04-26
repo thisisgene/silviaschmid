@@ -116,7 +116,7 @@ a {
 }
 
 .menu-item.active {
-  border: 2px dashed rgba(45, 188, 190, 1);
+  border: 2px dashed rgba(45, 188, 190);
 
 }
                             /* MAIN CONTENT SECTION */
