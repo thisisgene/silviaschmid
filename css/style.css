@@ -36,7 +36,7 @@ body.background-loaded:after {
   -webkit-transition: opacity .5s ease-in-out;
 }
 
-/*#load-screen {
+#load-screen {
   position: absolute;
   left: 0;
   right: 0;
@@ -44,7 +44,7 @@ body.background-loaded:after {
   bottom: 0;
   background-color: #fff;
   z-index: 100;
-}*/
+}
 
 a {
   text-decoration: none;
