@@ -41,6 +41,7 @@ function openPage(href, bonus) {
 }
 
 function loadPage(href, bonus) {
+  $('#content-container').addClass('loading');
   for (var i = 0; i < $('.pjax').length; i++) {
     var link = $('.pjax').eq(i);
 
@@ -66,7 +67,8 @@ function loadPage(href, bonus) {
     }
   }
   console.log(href);
-  $('#content-container').addClass('loading');
+
+  console.log($('#content-container').prop('class'));
   xmlhttp.open("GET", href, true);
 
   // Tells the browser to retrieve the response as a HTML document
