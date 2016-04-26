@@ -117,7 +117,7 @@ a {
 
 #menu-list .active {
   border: 2px dashed rgba(45, 188, 190, 1);
-
+  color: red;
 }
                             /* MAIN CONTENT SECTION */
 #content-container {
