@@ -1,5 +1,17 @@
+var preload = function(src, callback) {
+  // Create a temporary image.
+  var img = new Image();
+
+  // Invoke the callback as soon as the image is loaded
+  // Has to be set **before** the .src attribute. Otherwise
+  // `onload` could fire before the handler is set.
+  $(img).load(callback);
+
+  img.src = src;
+};
+
 $(document).ready(function(){
-  $('#load-screen').fadeOut(1000);
+  // $('#load-screen').fadeOut(1000);
   var hd_width;
   hd_width = $('#header-container').width();
   $('#header-container').css('width', hd_width);
@@ -27,4 +39,17 @@ $(document).ready(function(){
     // console.log(direction);
     // $('#header-container').css('width', 'auto');
   }, { offset: '140px'})
+
+  // Example usage:
+
+  $("body").addClass("loading-background");
+  var bImage = 'img/background1.jpg';
+
+  preload(bImage, function() {
+    $("body").addClass("background-loaded");
+    $("body").css('backgroundImage','url('+bImage+')');
+    console.log($("body").css('backgroundImage'));
+  });
+
+
 });

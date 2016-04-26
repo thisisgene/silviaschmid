@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url('../img/background1.jpg');
+  /*background-image: url('../img/background1.jpg');*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,7 +17,26 @@ body {
   font: 16px "Amatic";
   letter-spacing: .1em;
 }
-#load-screen {
+body:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(225, 253, 255);
+  z-index: -10;
+  opacity: 1;
+
+}
+body.background-loaded:after {
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+
+/*#load-screen {
   position: absolute;
   left: 0;
   right: 0;
@@ -25,7 +44,7 @@ body {
   bottom: 0;
   background-color: #fff;
   z-index: 100;
-}
+}*/
 
 a {
   text-decoration: none;
