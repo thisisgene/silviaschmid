@@ -11,7 +11,7 @@ var preload = function(src, callback) {
 };
 
 $(document).ready(function(){
-  // $('#load-screen').fadeOut(1000);
+  $('#load-screen').fadeOut(1000);
   var hd_width;
   hd_width = $('#header-container').width();
   $('#header-container').css('width', hd_width);
