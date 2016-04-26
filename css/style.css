@@ -114,7 +114,9 @@ a {
 #menu-list .menu-item:hover {
   border: 2px dashed rgba(45, 188, 190, 0.3);
 }
-.menu-link {
+
+.menu-item.active {
+  border: 2px dashed rgba(45, 188, 190, 1);
 
 }
                             /* MAIN CONTENT SECTION */
