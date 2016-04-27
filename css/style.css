@@ -133,7 +133,7 @@ a {
   border: 2px dashed rgba(45, 188, 190, 0);
   padding: .3em;
   padding-top: .1em;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 #menu-list .menu-item:hover {
   border: 2px dashed rgba(45, 188, 190, 0.3);
@@ -165,12 +165,7 @@ a {
   margin-top: 0;
 }
 
-.content-img {
-  display: inline-block;
-  vertical-align: top;
 
-  width: 35%;
-}
 #portrait {
   float: right;
   width: 36%;
