@@ -1,13 +1,18 @@
 var preload = function(src, callback) {
   // Create a temporary image.
-  var img = new Image();
+  if (src != 'noimage'){
+    var img = new Image();
 
-  // Invoke the callback as soon as the image is loaded
-  // Has to be set **before** the .src attribute. Otherwise
-  // `onload` could fire before the handler is set.
-  $(img).load(callback);
+    // Invoke the callback as soon as the image is loaded
+    // Has to be set **before** the .src attribute. Otherwise
+    // `onload` could fire before the handler is set.
+    $(img).load(callback);
 
-  img.src = src;
+    img.src = src;
+  }
+  else {
+    callback();
+  }
 };
 
 var desktopScript = function(){
@@ -43,19 +48,27 @@ var desktopScript = function(){
   // Example usage:
 
   $("body").addClass("loading-background");
-  var bImage = 'img/'+$('#content').data('bgimage');
-
+  if ($('#content').data('bgimage') != undefined){
+    var bImage = 'img/'+$('#content').data('bgimage');
+  }
+  else {
+    bImage = 'noimage';
+  }
+  console.log(bImage);
   preload(bImage, function() {
+    if (bImage != 'noimage'){
+      $("body").css('backgroundImage','url('+bImage+')');
+    }
+    else {              // if no background image add random color
+      $("body").css('backgroundColor', '#'+(Math.random()*0xFFFFFF<<0).toString(16));
+    }
     $("body").addClass("background-loaded");
-    $("body").css('backgroundImage','url('+bImage+')');
-    console.log($("body").css('backgroundImage'));
   });
 }
 
 $(document).ready(function(){
 
   if($('#menu-icon').css('display')=='none'){
-    console.log('desktop time');
     desktopScript();
   }
 
