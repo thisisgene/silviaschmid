@@ -16,6 +16,7 @@ var preload = function(src, callback) {
 };
 
 var mainScript = function(){
+  console.log('hereiam');
   $('.hidden-text').parent().addClass('hascontent');
   $('.hidden-text').parent().click(function(){
     $(this).children('.hidden-text').toggle(100);
