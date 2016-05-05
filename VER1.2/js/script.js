@@ -16,7 +16,19 @@ var preload = function(src, callback) {
 };
 
 var mainScript = function(){
-  console.log('hereiam');
+
+  $('.carousel').slick({
+    // centerMode: true,
+    // centerPadding: '60px',
+    infinite: true,
+    dots: true,
+    autoplay: true,
+    adaptiveHeight: true,
+    // fade: true,
+    mobileFirst: true,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+  });
   $('.hidden-text').parent().addClass('hascontent');
   $('.hidden-text').parent().click(function(){
     $(this).children('.hidden-text').toggle(100);
