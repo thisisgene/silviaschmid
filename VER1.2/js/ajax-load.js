@@ -92,7 +92,8 @@ function finishedLoading(responseHtml, bonus) {
   mainElement.innerHTML = responseHtml.querySelector('#content-container').innerHTML;
 
   $('#content-container').removeClass('loading');
-
+  desktopScript();
+  
   if (bonus!==undefined) {
     showAlert(bonus.type, bonus.text);
   }

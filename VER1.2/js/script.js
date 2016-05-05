@@ -43,7 +43,7 @@ var desktopScript = function(){
   // Example usage:
 
   $("body").addClass("loading-background");
-  var bImage = 'img/background1.jpg';
+  var bImage = 'img/'+$('#content').data('bgimage');
 
   preload(bImage, function() {
     $("body").addClass("background-loaded");
