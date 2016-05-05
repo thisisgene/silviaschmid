@@ -42,6 +42,7 @@ function openPage(href, bonus) {
 
 function loadPage(href, bonus) {
   $('#content-container').addClass('loading');
+  $("body").removeClass("background-loaded");
   for (var i = 0; i < $('.pjax').length; i++) {
     var link = $('.pjax').eq(i);
 
@@ -93,7 +94,7 @@ function finishedLoading(responseHtml, bonus) {
 
   $('#content-container').removeClass('loading');
   desktopScript();
-  
+
   if (bonus!==undefined) {
     showAlert(bonus.type, bonus.text);
   }
