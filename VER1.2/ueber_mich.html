@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dr. Silvia Schmid | Über mich</title>
     <link rel='stylesheet' href='css/style.css' type='text/css'>
     <link rel='stylesheet' href='css/devices.css' type='text/css'>
     <script type='text/javascript' src='js/jquery-2.2.0.min.js'></script>
-    <script type='text/javascript' src='js/jquery.waypoints.min.js'></script>
-    <script type='text/javascript' src='js/script.js'></script>
+    <script type='text/javascript' src='js/mobile.js'></script>
     <script type='text/javascript' src='js/ajax-load.js'></script>
+
   </head>
   <body>
-    <div id='load-screen'></div>
+    <!-- <div id='load-screen'></div> -->
     <div id='main-container'>
       <div id='header-container'>
         <div id='logo'><a href='index.html' class='pjax'><img src='img/logo_small.png' /></a></div>
@@ -20,6 +21,10 @@
           <h1 id='header-title' class='title'>Dr. Med. Silvia Schmid</h1>
           <h3 id='sub-title'>Ärztin für Allgemeinmedizin . Homöopathie . Mikroimmuntherapie . Sauerstofftherapie</h3>
         </div>
+        <div id='menu-icon' onclick='toggleMenu()'>
+          <img src='img/menu_icon.png' >
+        </div>
+        <div id='title-banner'>Über mich</div>
       </div>
       <div id='side-menu'>
         <ul id='menu-list'>
@@ -33,7 +38,9 @@
       <div id='content-container'>
         <div id='content'>
           <div class='content-text'>
-            <img id='portrait' src='img/portrait.jpg' />
+            <div id='portrait'>
+              <img id='portrait' src='img/portrait.jpg' />
+            </div>
             <h1 class='title'>Dr. med. Silvia Schmid</h1>
             <p class='ct-text'>
               Geb. 25. 7. 1959 in Wien
