@@ -12,6 +12,7 @@
   #menu-icon {
     display: none;
   }
+
   #content-container {
     margin-top: 9.6em;
     margin-left: 11.9em;
@@ -139,6 +140,9 @@
     position: fixed;
     top: .8em;
     right: 1em;
+  }
+  .menu-point {
+    width: 100%;
   }
                                             /* SIDE MENU MOBILE */
   #side-menu {
