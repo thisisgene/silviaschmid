@@ -93,7 +93,7 @@ a {
 }
                               /*  HEADER SECTION */
 #header-container, .hd-up {
-  background-color: rgba(255,255,255,0.82);
+  background-color: rgba(255,255,255,0.92);
   padding: .4em;
   /*width: 90%;*/
   top: 1.5em;
@@ -144,7 +144,7 @@ a {
                             /* SIDE MENU SECTION */
 #side-menu, .sm-up {
   position: fixed;
-  background-color: rgba(255,255,255,0.82);
+  background-color: rgba(255,255,255,0.92);
   top: 9.6em;
   width: 8em;
   margin: 0;
@@ -177,7 +177,7 @@ a {
 
 
 #content {
-  background-color: rgba(255,255,255,0.82);
+  background-color: rgba(255,255,255,0.92);
   padding: 3em;
 }
 
