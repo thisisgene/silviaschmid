@@ -93,6 +93,7 @@ function finishedLoading(responseHtml, bonus) {
   mainElement.innerHTML = responseHtml.querySelector('#content-container').innerHTML;
 
   $('#content-container').removeClass('loading');
+  mainScript();
   desktopScript();
 
   if (bonus!==undefined) {

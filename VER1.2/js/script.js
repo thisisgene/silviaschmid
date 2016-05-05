@@ -15,6 +15,13 @@ var preload = function(src, callback) {
   }
 };
 
+var mainScript = function(){
+  $('.hidden-text').parent().addClass('hascontent');
+  $('.hidden-text').parent().click(function(){
+    $(this).children('.hidden-text').toggle(100);
+  });
+}
+
 var desktopScript = function(){
   $('#load-screen').fadeOut(1000);
   var hd_width;
@@ -68,13 +75,10 @@ var desktopScript = function(){
 }
 
 $(document).ready(function(){
-
+  mainScript();
   if($('#menu-icon').css('display')=='none'){
     desktopScript();
   }
-  $('.hidden-text').parent().addClass('hascontent');
-  $('.hidden-text').parent().click(function(){
-    $(this).children('.hidden-text').toggle(100);
-  });
+
 
 });
