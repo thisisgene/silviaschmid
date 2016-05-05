@@ -84,7 +84,7 @@ a {
 .hidden-text {
   display: none;
   font-weight: normal;
-  margin-bottom: 0;
+  /*margin-bottom: 0;*/
   color: #333;
   width: 80%;
 }
