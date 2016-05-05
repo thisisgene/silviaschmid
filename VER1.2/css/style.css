@@ -74,11 +74,22 @@ a {
   background-repeat: no-repeat;
   margin-right: .4em;
 }
-.menu-point div a {
+.menu-point div *  {
   padding-left: 2em;
+  /*cursor: pointer;*/
 }
 .menu-point div a:hover {
   letter-spacing: .2em;
+}
+.hidden-text {
+  display: none;
+  font-weight: normal;
+  margin-bottom: 0;
+  color: #333;
+}
+.hascontent {
+  cursor: pointer;
+  color: #088;
 }
                               /*  HEADER SECTION */
 #header-container, .hd-up {
@@ -183,6 +194,13 @@ a {
 }
 .ct-text {
   letter-spacing: .02em;
+}
+.ct-list {
+  list-style: none;
+  padding: 0;
+}
+.ct-list li {
+  margin: 1em 0;
 }
 .ct-big {
   font-family: "Helvetica Neue";

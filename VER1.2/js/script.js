@@ -72,5 +72,9 @@ $(document).ready(function(){
   if($('#menu-icon').css('display')=='none'){
     desktopScript();
   }
+  $('.hidden-text').parent().addClass('hascontent');
+  $('.hidden-text').parent().click(function(){
+    $(this).children('.hidden-text').toggle(100);
+  });
 
 });
