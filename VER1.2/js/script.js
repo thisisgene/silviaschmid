@@ -60,6 +60,7 @@ var desktopScript = function(){
       $("body").css('backgroundImage','url('+bImage+')');
     }
     else {              // if no background image add random color
+      $("body").css('backgroundImage','none');
       $("body").css('backgroundColor', '#'+(Math.random()*0xFFFFFF<<0).toString(16));
     }
     $("body").addClass("background-loaded");
