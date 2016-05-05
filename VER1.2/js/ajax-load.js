@@ -94,8 +94,9 @@ function finishedLoading(responseHtml, bonus) {
 
   $('#content-container').removeClass('loading');
   mainScript();
-  desktopScript();
-
+  if($('#menu-icon').css('display')=='none'){
+    desktopScript();
+  }
   if (bonus!==undefined) {
     showAlert(bonus.type, bonus.text);
   }
