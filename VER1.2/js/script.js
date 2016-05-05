@@ -10,7 +10,7 @@ var preload = function(src, callback) {
   img.src = src;
 };
 
-$(document).ready(function(){
+var desktopScript = function(){
   $('#load-screen').fadeOut(1000);
   var hd_width;
   hd_width = $('#header-container').width();
@@ -50,6 +50,13 @@ $(document).ready(function(){
     $("body").css('backgroundImage','url('+bImage+')');
     console.log($("body").css('backgroundImage'));
   });
+}
 
+$(document).ready(function(){
+
+  if($('#menu-icon').css('display')=='none'){
+    console.log('desktop time');
+    desktopScript();
+  }
 
 });

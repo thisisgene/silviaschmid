@@ -134,6 +134,7 @@
                                             /* SIDE MENU MOBILE */
   #side-menu {
     display: none;
+    background-color: rgba(235,255,255,0.96);
   }
                                             /* MAIN CONTENT MOBILE */
   #content-container {
