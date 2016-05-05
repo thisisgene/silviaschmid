@@ -6,6 +6,9 @@
 
 @media screen and (min-width: 1025px) {
   /* MAIN CONTENT DESKTOP */
+  .mobile-only {
+    display: none;
+  }
   #menu-icon {
     display: none;
   }
