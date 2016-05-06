@@ -14,9 +14,47 @@
   }
 
   #content-container {
-    margin-top: 9.6em;
-    margin-left: 11.9em;
+    position: fixed;
+    top: 9.6em;
+    left: 17.9em;
+    right: 6em;
+    bottom: 1.5em;
+    overflow: hidden;
+    box-shadow: inset 0 17px 9px -7px rgba(0,0,0,1);
   }
+  #content-container:before {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 3em;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.92) 0px, transparent 100%);
+
+  }
+  #content-container:after {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 3em;
+    background: linear-gradient(to top, rgba(255,255,255,0.92) 0px, transparent 100%);
+  }
+  #content {
+    /*z-index: -2;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    padding: 3em;
+    overflow-y: auto;
+  }
+
   #title-banner {
     display: none;
   }
