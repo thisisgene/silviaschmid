@@ -53,10 +53,23 @@ a {
 .title {
   color: rgb(45, 188, 190);
 }
+.title-small {
+  color: rgb(45, 188, 190);
+  font-size: 1.2em;
+}
 .ct-text {
   font-family: 'Helvetica Neue';
-  font-size: 80%;
+  font-size: .8em;
   padding-left: 1em;
+}
+.ct-italic {
+  font-family: 'Helvetica Neue';
+  font-style: italic;
+  color: #666;
+}
+.ct-highlight {
+  font-family: 'Helvetica Neue';
+  font-size: .9em;
 }
 .menu-point {
   width: 80%;
@@ -215,4 +228,90 @@ a {
   float: right;
   width: 36%;
   padding: 1em;
+}
+
+        /* CONTACT CONTAINER */
+#contact-container {
+  text-align: center;
+  padding-top: 2em;
+}
+
+#phone-container {
+  background-image: url('../img/telefon_small.png');
+  background-repeat: no-repeat;
+  width: 14em;
+  height: 3em;
+  padding-left: 4em;
+  margin: 2em auto;
+  text-align: left;
+}
+#appointments {
+  width: 30em;
+  /*border-top: 1px solid #ddd;*/
+  /*height: 3em;*/
+  margin: 0 auto;
+  /*display: inline-table;*/
+}
+.appointment-box {
+  display: inline-block;
+  text-align: center;
+  margin: 0 1em;
+  padding: .4em 1em;
+  border: 1px dashed #ddd;
+  background-color: #fff;
+  /*width: 35%;*/
+}
+.appointment-box table {
+  font-family: 'Helvetica Neue';
+  font-size: .9em;
+  text-align: left;
+}
+#directions-container {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #eee;
+}
+.directions-box {
+  width: 15em;
+  height: 36px;
+  padding-left: 7em;
+  margin: 2em auto;
+  text-align: left;
+
+}
+.directions-box p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+#directions-train {
+  background-image: url('../img/train_small.png');
+  background-repeat: no-repeat;
+}
+#directions-car {
+  background-image: url('../img/car_small.png');
+  background-repeat: no-repeat;
+}
+
+#map-container {
+  width: 80%;
+  margin: 1em auto;
+}
+
+#google-map {
+  border: 1px solid #ccc;
+  position: relative;
+  padding-bottom: 65%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+#map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }

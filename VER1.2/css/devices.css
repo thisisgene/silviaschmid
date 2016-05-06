@@ -246,6 +246,17 @@
     width: 80%;
   }
 }
+
+@media screen and (max-width: 620px) {
+  #appointments {
+    width: 100%;
+
+  }
+  #map-container {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 380px) {
   #header-container {
     height: 2.6em;
