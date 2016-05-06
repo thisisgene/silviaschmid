@@ -56,6 +56,7 @@ a {
 .title-small {
   color: rgb(45, 188, 190);
   font-size: 1.2em;
+  margin-top: 0;
 }
 .ct-text {
   font-family: 'Helvetica Neue';
@@ -242,7 +243,7 @@ a {
   width: 14em;
   height: 3em;
   padding-left: 4em;
-  margin: 2em auto;
+  margin: 2em auto 1em auto;
   text-align: left;
 }
 #appointments {

@@ -245,12 +245,12 @@
   #menu-icon img{
     width: 80%;
   }
-}
 
-@media screen and (max-width: 620px) {
   #appointments {
     width: 100%;
-
+  }
+  #appointment-left {
+    margin-bottom: 1em;
   }
   #map-container {
     width: 100%;
