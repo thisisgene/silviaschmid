@@ -3,6 +3,10 @@
   src: url('../fonts/amatic/Amatic-Bold.ttf');
 }
 
+::-webkit-scrollbar {
+      width: 3px;
+}
+
 body {
   /*background-image: url('../img/background1.jpg');*/
   -webkit-background-size: cover;
