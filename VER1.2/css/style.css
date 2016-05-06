@@ -55,18 +55,23 @@ a {
 }
 .title-small {
   color: rgb(45, 188, 190);
-  font-size: 1.2em;
-  margin-top: 0;
+  font-size: 1.3em;
+  /*margin-top: 0;*/
 }
 .ct-text {
   font-family: 'Helvetica Neue';
   font-size: .8em;
   padding-left: 1em;
+  font-weight: normal;
 }
 .ct-italic {
   font-family: 'Helvetica Neue';
   font-style: italic;
   color: #666;
+}
+.ct-bold {
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
 }
 .ct-highlight {
   font-family: 'Helvetica Neue';
@@ -74,11 +79,11 @@ a {
 }
 .menu-point {
   width: 80%;
-  background-color: rgba(45, 188, 190,0.2);
-  background: -webkit-linear-gradient(left, rgba(45, 188, 190,0.2) 60%, rgba(45, 188, 190,0)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, rgba(45, 188, 190,0.2) 60%, rgba(45, 188, 190,0)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, rgba(45, 188, 190,0.2) 60%, rgba(45, 188, 190,0)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, rgba(45, 188, 190,0.2) 60%, rgba(45, 188, 190,0));
+  background-color: rgba(45, 188, 190,0.12);
+  background: -webkit-linear-gradient(left, rgba(45, 188, 190,0.12) 60%, rgba(45, 188, 190,0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(45, 188, 190,0.12) 60%, rgba(45, 188, 190,0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(45, 188, 190,0.12) 60%, rgba(45, 188, 190,0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(45, 188, 190,0.12) 60%, rgba(45, 188, 190,0));
   border-top-left-radius: 1em;
   border-bottom-left-radius: 1em;
   padding: .4em;
@@ -87,9 +92,10 @@ a {
   background-image: url('../img/menu_point.png');
   background-repeat: no-repeat;
   margin-right: .4em;
+  padding-left: 2em;
 }
 .menu-point div *  {
-  padding-left: 2em;
+  padding: 0;
   /*cursor: pointer;*/
 }
 .menu-point div a:hover {

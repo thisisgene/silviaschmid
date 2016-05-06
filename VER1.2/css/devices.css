@@ -275,3 +275,16 @@
     width: 80%;
   }
 }
+
+                              /* RETINA SCREENS */
+/*@media screen and (-webkit-min-device-pixel-ratio : 2) {
+  #phone-container {
+    background-image: url('../img/telefon_small@2x.png');
+  }
+  #directions-train {
+    background-image: url('../img/train_small@2x.png');
+  }
+  #directions-car {
+    background-image: url('../img/car_small@2x.png');
+  }
+}*/
