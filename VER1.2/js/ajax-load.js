@@ -94,6 +94,7 @@ function finishedLoading(responseHtml, bonus) {
 
   $('#content-container').removeClass('loading');
   mainScript();
+  $('.logo-intro').removeClass('logo-intro');
   if($('#menu-icon').css('display')=='none'){
     desktopScript();
   }
