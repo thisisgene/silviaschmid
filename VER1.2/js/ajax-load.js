@@ -97,11 +97,13 @@ function finishedLoading(responseHtml, bonus) {
   if (!$('#content').hasClass('logo-intro')){
     $('#logo').delay(300).fadeIn(300);
     $('.logo-intro').removeClass('logo-intro');
+    $('.no-fade-collums').removeClass('.no-fade-collums');
   }
   else {
     $('#logo').fadeOut(100);
     $('#content').addClass('logo-intro');
     $('#header-container').addClass('logo-intro');
+    $('#content-container').addClass('no-fade-collums');
   }
   if($('#menu-icon').css('display')=='none'){
     desktopScript();
