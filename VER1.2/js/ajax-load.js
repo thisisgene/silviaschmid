@@ -94,13 +94,13 @@ function finishedLoading(responseHtml, bonus) {
 
   $('#content-container').removeClass('loading');
   mainScript();
-  if ($('#header-container').hasClass('logo-intro')){
+  if ($('#content').hasClass('logo-intro')){
     $('#logo').fadeIn(100);
     $('.logo-intro').removeClass('logo-intro');
   }
   else {
     $('#logo').fadeOut(100);
-    $('#header-container').addClass('logo-intro');
+    $('#content').addClass('logo-intro');
   }
   if($('#menu-icon').css('display')=='none'){
     desktopScript();
