@@ -15,6 +15,9 @@
   .logo-intro #title-container{
     margin: 1em 0 1em 1.9em;
   }
+  #home-back {
+    display: none;
+  }
   #content-container {
     position: fixed;
     top: 9.6em;
@@ -125,6 +128,26 @@
   body {
     margin: 0;
     padding: 0;
+    background: #fff;
+  }
+  #home-back {
+    z-index: -5;
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+  }
+  #home-back img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+
   }
 
   #header-container, .hd-up {

@@ -97,8 +97,10 @@ function finishedLoading(responseHtml, bonus) {
   if (!$('#content').hasClass('logo-intro')){
     $('#logo').delay(300).fadeIn(300);
     $('.logo-intro').removeClass('logo-intro');
+    $('.body-home').removeClass('body-home');
   }
   else {
+    $('body').addClass('body-home');
     console.log('homescreen');
     $('#logo').fadeOut(100);
     $('#content').addClass('logo-intro');
