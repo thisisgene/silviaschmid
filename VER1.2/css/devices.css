@@ -12,7 +12,9 @@
   #menu-icon {
     display: none;
   }
-
+  .logo-intro #title-container{
+    margin: 1em 0 1em 1.9em;
+  }
   #content-container {
     position: fixed;
     top: 9.6em;
@@ -20,7 +22,7 @@
     right: 6em;
     bottom: 1.5em;
     overflow: hidden;
-    box-shadow: inset 0 17px 9px -7px rgba(0,0,0,1);
+    /*box-shadow: inset 0 17px 9px -7px rgba(0,0,0,1);*/
   }
   #content-container:before {
     content: '';
@@ -42,6 +44,10 @@
     left: 0;
     height: 3em;
     background: linear-gradient(to top, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 100%);
+  }
+  .no-fade-collums:before, .no-fade-collums:after {
+    background: rgba(255,255,255,0) !important;
+
   }
   #content {
     /*z-index: -2;*/
