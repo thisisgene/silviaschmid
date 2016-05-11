@@ -95,9 +95,9 @@ function finishedLoading(responseHtml, bonus) {
   $('#content-container').removeClass('loading');
   mainScript();
   if (!$('#content').hasClass('logo-intro')){
+    $('.no-fade-collums').removeClass('.no-fade-collums');
     $('#logo').delay(300).fadeIn(300);
     $('.logo-intro').removeClass('logo-intro');
-    $('.no-fade-collums').removeClass('.no-fade-collums');
   }
   else {
     $('#logo').fadeOut(100);
