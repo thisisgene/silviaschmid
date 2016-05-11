@@ -142,9 +142,6 @@ a {
   z-index: 5;
   float: left;
   margin: .4em 2em .4em 1.5em;
-  transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
 }
 #logo img {
   width: 6.5em;
