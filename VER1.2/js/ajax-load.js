@@ -101,6 +101,7 @@ function finishedLoading(responseHtml, bonus) {
   else {
     $('#logo').fadeOut(100);
     $('#content').addClass('logo-intro');
+    $('#header-container').addClass('logo-intro');
   }
   if($('#menu-icon').css('display')=='none'){
     desktopScript();
