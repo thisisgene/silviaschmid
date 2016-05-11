@@ -95,7 +95,6 @@ function finishedLoading(responseHtml, bonus) {
   $('#content-container').removeClass('loading');
   mainScript();
   if (!$('#content').hasClass('logo-intro')){
-    $('.no-fade-collums').removeClass('.no-fade-collums');
     $('#logo').delay(300).fadeIn(300);
     $('.logo-intro').removeClass('logo-intro');
   }
@@ -103,7 +102,6 @@ function finishedLoading(responseHtml, bonus) {
     $('#logo').fadeOut(100);
     $('#content').addClass('logo-intro');
     $('#header-container').addClass('logo-intro');
-    $('#content-container').addClass('no-fade-collums');
   }
   if($('#menu-icon').css('display')=='none'){
     desktopScript();
