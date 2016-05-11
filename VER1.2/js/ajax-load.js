@@ -95,11 +95,11 @@ function finishedLoading(responseHtml, bonus) {
   $('#content-container').removeClass('loading');
   mainScript();
   if ($('#header-container').hasClass('logo-intro')){
-    $('#logo').fadeIn(500);
+    $('#logo').fadeIn(100);
     $('.logo-intro').removeClass('logo-intro');
   }
   else {
-    $('#logo').fadeOut(500);
+    $('#logo').fadeOut(100);
     $('#header-container').addClass('logo-intro');
   }
   if($('#menu-icon').css('display')=='none'){
