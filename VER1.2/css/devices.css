@@ -33,7 +33,7 @@
     left: 0;
     height: 3em;
     background: linear-gradient(to bottom, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 100%);
-
+    opacity: 1;
   }
   #content-container:after {
     content: '';
@@ -44,6 +44,7 @@
     left: 0;
     height: 3em;
     background: linear-gradient(to top, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 100%);
+    opacity: 1;
   }
   .no-fade-collums:before, .no-fade-collums:after {
     /*background: rgba(255,255,255,0);*/
