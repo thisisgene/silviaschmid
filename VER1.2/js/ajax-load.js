@@ -99,6 +99,7 @@ function finishedLoading(responseHtml, bonus) {
     $('.logo-intro').removeClass('logo-intro');
   }
   else {
+    $('#logo').fadeOut(500);
     $('#header-container').addClass('logo-intro');
   }
   if($('#menu-icon').css('display')=='none'){
