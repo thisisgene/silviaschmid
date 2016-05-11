@@ -50,7 +50,8 @@ body.background-loaded:after {
 }
 
 .logo-intro #logo{
-  opacity: 0;
+  /*opacity: 0;*/
+  display: none;
 }
 .logo-intro #title-container{
   margin: 1em 0 1em 1.9em;
