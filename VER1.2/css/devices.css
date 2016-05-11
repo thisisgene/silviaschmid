@@ -24,7 +24,17 @@
     overflow: hidden;
     /*box-shadow: inset 0 17px 9px -7px rgba(0,0,0,1);*/
   }
-  #content-container:before {
+  #scroll-frame {
+    position: fixed;
+    top: 9.6em;
+    left: 17.9em;
+    right: 6em;
+    bottom: 1.5em;
+    overflow: hidden;
+    /*background: red;*/
+    /*box-shadow: inset 0 17px 9px -7px rgba(0,0,0,1);*/
+  }
+  #scroll-frame:before {
     content: '';
     z-index: 2;
     position: absolute;
@@ -36,7 +46,7 @@
     opacity: 1;
     display: block;
   }
-  #content-container:after {
+  #scroll-frame:after {
     content: '';
     z-index: 2;
     position: absolute;
@@ -48,15 +58,7 @@
     opacity: 1;
     display: block;
   }
-  #content-container-home {
-    position: fixed;
-    top: 9.6em;
-    left: 17.9em;
-    right: 6em;
-    bottom: 1.5em;
-    overflow: hidden;
-    /*box-shadow: inset 0 17px 9px -7px rgba(0,0,0,1);*/
-  }
+
   #content {
     /*z-index: -2;*/
     position: absolute;
