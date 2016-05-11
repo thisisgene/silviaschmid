@@ -95,10 +95,13 @@ function finishedLoading(responseHtml, bonus) {
   $('#content-container').removeClass('loading');
   mainScript();
   if (!$('#content').hasClass('logo-intro')){
+    $('#content-container-home').fadeOut(300);
+    $('#content-container').fadeIn(300);  
     $('#logo').delay(300).fadeIn(300);
     $('.logo-intro').removeClass('logo-intro');
   }
   else {
+    $('#content-container-home').fadeIn(300);
     $('#logo').fadeOut(100);
     $('#content').addClass('logo-intro');
     $('#header-container').addClass('logo-intro');
