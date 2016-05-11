@@ -94,7 +94,7 @@ function finishedLoading(responseHtml, bonus) {
 
   $('#content-container').removeClass('loading');
   mainScript();
-  if ($('#content').hasClass('logo-intro')){
+  if (!$('#content').hasClass('logo-intro')){
     $('#logo').fadeIn(100);
     $('.logo-intro').removeClass('logo-intro');
   }
