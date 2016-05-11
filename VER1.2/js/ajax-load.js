@@ -101,6 +101,7 @@ function finishedLoading(responseHtml, bonus) {
     $('.logo-intro').removeClass('logo-intro');
   }
   else {
+    console.log('homescreen');
     $('#content-container-home').css('opacity', 1);
     $('#content-container').css('opacity', 0);
     $('#logo').fadeOut(100);
