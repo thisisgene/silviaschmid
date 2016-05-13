@@ -328,6 +328,7 @@ a {
 #directions-car {
   background-image: url('../img/car_small.png');
   background-repeat: no-repeat;
+  height: 120px;
 }
 
 #map-container {
