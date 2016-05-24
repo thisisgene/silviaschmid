@@ -224,10 +224,10 @@ a {
 #home-screen img{
   margin: 0 auto;
   width: 90%;
-  /*background: -webkit-radial-gradient(rgba(10,10,10,0.2) 40%, rgba(10,10,10,0) 60%); /* Safari 5.1 to 6.0 */
-  background: -o-radial-gradient(rgba(10,10,10,0.2) 40%, rgba(10,10,10,0) 60%); /* For Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(rgba(10,10,10,0.2) 40%, rgba(10,10,10,0) 60%); /* For Firefox 3.6 to 15 */
-  background: radial-gradient(rgba(10,10,10,0.2) 40%, rgba(10,10,10,0) 60%); /* Standard syntax */*/
+  /*background: -webkit-radial-gradient(rgba(10,10,10,0.2) 40%, rgba(10,10,10,0) 60%); /* Safari 5.1 to 6.0 */*/
+  /*background: -o-radial-gradient(rgba(10,10,10,0.2) 40%, rgba(10,10,10,0) 60%); /* For Opera 11.6 to 12.0 */*/
+  /*background: -moz-radial-gradient(rgba(10,10,10,0.2) 40%, rgba(10,10,10,0) 60%); /* For Firefox 3.6 to 15 */*/
+  /*background: radial-gradient(rgba(10,10,10,0.2) 40%, rgba(10,10,10,0) 60%); /* Standard syntax */*/
   /*border-radius: 50%;*/
 }
 
