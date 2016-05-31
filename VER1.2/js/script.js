@@ -26,13 +26,14 @@ var mainScript = function(){
     adaptiveHeight: true,
     // fade: true,
     mobileFirst: true,
-    prevArrow: $('.prev'),
-    nextArrow: $('.next'),
+    // prevArrow: $('.prev'),
+    // nextArrow: $('.next'),
   });
   $('.hidden-text').parent().addClass('hascontent');
   $('.hidden-text').parent().click(function(){
     $(this).children('.hidden-text').toggle(100);
   });
+
 }
 
 var desktopScript = function(){

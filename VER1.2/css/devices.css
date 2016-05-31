@@ -18,6 +18,11 @@
   #home-back {
     display: none;
   }
+  #home-screen {
+    /*margin-top: 2em;*/
+    width: 80%;
+    margin: 3em auto;
+  }
   #content-container {
     position: fixed;
     top: 9.6em;
@@ -149,7 +154,11 @@
     min-height: 50%;
 
   }
-
+  #home-screen {
+    /*margin-top: 2em;*/
+    width: 80%;
+    margin: 3em auto;
+  }
   #header-container, .hd-up {
     background-color: rgba(235,255,255,0.96);
     padding: .1em;
@@ -278,6 +287,12 @@
   }
 }
 @media screen and (max-width: 620px) {
+  #home-screen {
+    /*margin-top: 2em;*/
+    width: 95%;
+    margin: 0 auto;
+  }
+
   #menu-icon{
     top: .9em;
   }

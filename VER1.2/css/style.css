@@ -306,29 +306,26 @@ a {
   border-top: 1px solid #eee;
 }
 .directions-box {
-  width: 15em;
-  height: 36px;
-  padding-left: 7em;
+  width: 80%;
+  /*height: 36px;*/
+  padding-top: 3em;
   margin: 2em auto;
   text-align: left;
 
 }
-.directions-box p {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-}
+
 
 #directions-train {
   background-image: url('../img/train_small.png');
   background-repeat: no-repeat;
+  background-position: center top;
+  /*height: 160px;*/
 }
 #directions-car {
   background-image: url('../img/car_small.png');
   background-repeat: no-repeat;
-  height: 120px;
+  background-position: center top;
+  /*height: 320px;*/
 }
 
 #map-container {
