@@ -247,6 +247,7 @@
   #side-menu {
     display: none;
     background-color: rgba(235,255,255,0.96);
+    box-shadow: 0 0 1.5em #cee;
   }
                                             /* MAIN CONTENT MOBILE */
   #content-container {
