@@ -6,6 +6,9 @@
 
 @media screen and (min-width: 1025px) {
   /* MAIN CONTENT DESKTOP */
+  #sub-title-mobile {
+    display: none;
+  }
   .mobile-only {
     display: none;
   }
@@ -222,6 +225,16 @@
     -moz-transition: all .1s ease-in-out .1s;
     -webkit-transition: all .1s ease-in-out .1s;*/
   }
+
+  #sub-title-mobile {
+    display: block;
+    font-family: 'Helvetica Neue';
+    text-align: center;
+    font-size: .7em;
+    font-weight: normal;
+    font-style: italic;
+  }
+
   #menu-icon {
     position: fixed;
     top: .8em;
